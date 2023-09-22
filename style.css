@@ -439,7 +439,7 @@
   margin-top: 2rem;
 }
 .mark {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 @media (min-width: 992px) {
@@ -451,7 +451,7 @@
     margin-left: 1%;
   }
   .mark {
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
 
   .button-one .box {
@@ -738,7 +738,7 @@
     margin-top: 15px;
   }
   .mark {
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 }
 
