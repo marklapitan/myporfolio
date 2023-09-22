@@ -1,63 +1,116 @@
-.body-container {
-  font-family: gugi;
-}
-.navbar-container #navbarText {
-  margin-left: 2rem;
-}
-
 /*navbar-btn*/
-.button-one {
-  color: white;
-  text-decoration: none;
-  font-size: 15px;
-  border: none;
-  background: none;
-  font-weight: 100;
+.button-one .nav-link {
+  font-size: 10px;
+  font-weight: lighter;
+}
+.navbar-container {
+  margin-top: 2rem;
 }
 
-.button-one::before {
-  margin-left: auto;
-}
-
-.button-one::after,
-.button-one::before {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background: #14ebd9;
+.button-one .box {
+  width: 80px;
+  height: auto;
+  float: left;
+  transition: 0.5s linear;
+  position: relative;
   display: block;
-  transition: 0.3s;
+  overflow: hidden;
+  padding: 2px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
-.button-one:hover::after,
-.button-one:hover::before {
+.button-one .box:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
   width: 100%;
+  height: 1px;
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
 }
+
+.button-one .box:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+
+.button-one .box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.button-one .box:hover:before {
+  border-color: #f7db81;
+  height: 50%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+.button-one .box:hover:after {
+  border-color: #c57104;
+  height: 50%;
+  transform: translateX(0);
+  transition: 0.3s transform linear, 0.3s height linear 0.3s;
+}
+
+.button-one {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
 /*start of first-page*/
+
 .first-main {
   position: relative;
   color: #ffffff;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1rem;
 }
 .first-main .img-fluid {
-  width: 100%;
+  width: 80%;
+  margin-left: 10%;
   height: 100%;
   margin-top: 0.5rem;
 }
 .first-main .card-title {
-  font-size: 45px;
-  margin-left: 5rem;
+  font-size: 36px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+  font-weight: bolder;
+  text-shadow: 5px 10px #302f2f;
 }
-.first-main .card-text {
-  margin-left: 5rem;
+.first-main .button-two {
+  margin-left: 1.5rem;
+  margin-top: 1rem;
 }
+
 .first-main p {
   color: #000000;
 }
 .first-main .actual-text {
-  font-size: 12px;
+  font-size: 14px;
 }
 .first-main .hover-text {
-  font-size: 12px;
+  font-size: 14px;
 }
 .first-main .box {
   padding: 1rem;
@@ -66,7 +119,7 @@
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(25px);
   border-radius: 0.7rem;
-  transition: all ease 0.3s;
+  transition: all ease 0.5s;
 }
 
 .first-main .box:hover {
@@ -118,10 +171,11 @@
 
 /*second-page*/
 .second-main {
-  margin-top: 5rem;
+  margin-top: 6rem;
   margin-left: 10%;
   margin-right: 10%;
   font-family: sans-serif;
+  text-align: justify;
 }
 .second-main .card-header {
   color: #ffffff;
@@ -130,10 +184,14 @@
   font-size: 5px;
 }
 .second-main #secondmain-cardbody {
-  margin-right: 50%;
+  margin-right: 20%;
+}
+.second-main p {
+  font-size: 12px;
 }
 .second-main #secondmain-image-two {
-  width: 100%;
+  width: 50%;
+  margin-left: 25%;
 }
 .secondmain-about {
   color: #ffffff;
@@ -142,58 +200,108 @@
 }
 
 /*Third page*/
-.third-main .card-header {
+.third-main {
+  margin-top: 0;
+  margin-top: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.third-main .skills {
   color: #ffffff;
+  font-size: 35px;
+  padding: 1rem;
+  text-align: center;
 }
 .third-main .card-title {
+  margin-top: 0%;
+}
+.third-main #html-image {
+  width: 70px;
+  font-size: 10px;
+  color: #ffffff;
+  margin-left: 10%;
+}
+.third-main #css-image {
+  width: 70px;
+  font-size: 10px;
+  color: #ffffff;
+  margin-left: 20%;
+}
+.third-main #js-image {
+  width: 80px;
+  font-size: 11px;
+  color: #ffffff;
+  margin-left: 10%;
+}
+.third-main #php-image {
+  width: 80px;
+  font-size: 12px;
+  color: #ffffff;
+  margin-top: 21px;
+  margin-left: 20%;
+}
+.third-main #bootstrap {
+  width: 100px;
+  font-size: 12px;
+  margin-left: 10%;
   color: #ffffff;
 }
-.third-main .card-text {
-  color: #ffffff;
-}
-.third-main {
-  margin-top: 5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-.third-main .container {
-  margin-left: 5%;
-}
-.third-main .display-3 {
+.third-main #reactjs {
+  width: 85px;
+  font-size: 12px;
+  margin-left: 20%;
   color: #ffffff;
 }
 
 .third-main #thirdmain-framework {
   margin-left: 5rem;
 }
-.third-main #thirdmain-reactjs {
-  margin-left: 20%;
-}
-.third-main #php {
-  margin-right: 10rem;
-}
-/*fourth page*/
 
+/*fourth page*/
 .fourth-main {
   margin-top: 5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
-.fourth-main .card-header {
-  font-size: 35px;
+
+.fourth-main #contact-me {
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
 }
-.fourth-main .comment-section {
-  margin-top: 10%;
-  font-family: sans-serif;
+.fourth-main #yahoo-image {
+  width: 70px;
+  margin-left: 58%;
+  margin-top: 2rem;
 }
-.fourth-main .container {
+.fourth-main #facebook-image {
+  width: 70px;
+  margin-left: 58%;
   margin-top: 1rem;
-  margin-left: 5%;
+}
+.fourth-main #google-image {
+  width: 70px;
+  margin-left: 58%;
+  margin-top: 1rem;
+}
+.fourth-main #yahoo-btn {
+  width: 80px;
+  margin-left: 30%;
+  font-size: 10px;
+}
+.fourth-main #facebook-btn {
+  width: 80px;
+  margin-left: 30%;
+  font-size: 10px;
+}
+
+.fourth-main #google-btn {
+  width: 80px;
+  margin-left: 30%;
+  font-size: 10px;
 }
 
 /*yahoo-btn*/
 
-#yahoo-btn {
+.fourth-main #yahoo-btn {
   position: relative;
   display: flex;
   justify-content: center;
@@ -206,38 +314,39 @@
   border: none;
 }
 
-#yahoo-btn:after {
+.fourth-main #yahoo-btn:after {
   content: " ";
   width: 0%;
   height: 100%;
 
   background: #0362e7;
   position: absolute;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
   right: 0;
 }
 
-#yahoo-btn:hover::after {
+.fourth-main #yahoo-btn:hover::after {
   right: auto;
   left: 0;
   width: 100%;
 }
 
-#yahoo-btn span {
+.fourth-main #yahoo-btn span {
   text-align: center;
   text-decoration: none;
   width: 100%;
-  color: #ffffff;
+  font-weight: bold;
+  color: #000000;
   letter-spacing: 0.3em;
   z-index: 20;
   transition: all 0.3s ease-in-out;
 }
-#yahoo-btn:hover span {
+.fourth-main #yahoo-btn:hover span {
   color: #ffffff;
   animation: scaleUp 0.3s ease-in-out;
 }
 
-#facebook-btn {
+.fourth-main #facebook-btn {
   position: relative;
   display: flex;
   justify-content: center;
@@ -250,7 +359,7 @@
   border: none;
 }
 
-#facebook-btn:after {
+.fourth-main #facebook-btn:after {
   content: " ";
   width: 0%;
   height: 100%;
@@ -261,27 +370,28 @@
   right: 0;
 }
 
-#facebook-btn:hover::after {
+.fourth-main #facebook-btn:hover::after {
   right: auto;
   left: 0;
   width: 100%;
 }
 
-#facebook-btn span {
+.fourth-main #facebook-btn span {
   text-align: center;
   text-decoration: none;
   width: 100%;
-  color: #ffffff;
+  font-weight: bold;
+  color: #000000;
   letter-spacing: 0.3em;
   z-index: 20;
   transition: all 0.3s ease-in-out;
 }
-#facebook-btn:hover span {
+.fourth-main #facebook-btn:hover span {
   color: #ffffff;
   animation: scaleUp 0.3s ease-in-out;
 }
 
-#google-btn {
+.fourth-main #google-btn {
   position: relative;
   display: flex;
   justify-content: center;
@@ -294,99 +404,144 @@
   border: none;
 }
 
-#google-btn:after {
+.fourth-main #google-btn:after {
   content: " ";
   width: 0%;
   height: 100%;
 
   background: #0362e7;
   position: absolute;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.5s ease-in-out;
   right: 0;
 }
 
-#google-btn:hover::after {
+.fourth-main #google-btn:hover::after {
   right: auto;
   left: 0;
   width: 100%;
 }
 
-#google-btn span {
+.fourth-main #google-btn span {
   text-align: center;
   text-decoration: none;
+  font-weight: bold;
   width: 100%;
-  color: #ffffff;
+  color: #000000;
   letter-spacing: 0.3em;
   z-index: 20;
   transition: all 0.3s ease-in-out;
 }
-#google-btn:hover span {
+.fourth-main #google-btn:hover span {
   color: #ffffff;
   animation: scaleUp 0.3s ease-in-out;
 }
+.card-footer {
+  margin-top: 2rem;
+}
 
-@media (min-width: 1400px) {
-  /*navbar-page*/
-
+@media (min-width: 992px) {
+  .button-one .nav-link {
+    font-size: 15px;
+  }
   .navbar-container {
-    margin-top: 1rem;
-  }
-  .navbar-container #navbarText {
-    justify-content: center;
-    font-size: 30px;
+    margin-top: 2rem;
+    margin-left: 1%;
   }
 
-  /*navbar-btn*/
-  .button-one {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    border: none;
-    background: none;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-  }
-
-  .button-one::before {
-    margin-left: auto;
-  }
-
-  .button-one::after,
-  .button-one::before {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #14ebd9;
+  .button-one .box {
+    width: 110px;
+    height: auto;
+    float: left;
+    transition: 0.5s linear;
+    position: relative;
     display: block;
-    transition: 0.5s;
+    overflow: hidden;
+    padding: 2px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
   }
 
-  .button-one:hover::after,
-  .button-one:hover::before {
+  .button-one .box:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
     width: 100%;
+    height: 2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+
+  .button-one .box:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+
+  .button-one .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .button-one .box:hover:before {
+    border-color: #f7db81;
+    height: 50%;
+    transform: translateX(0);
+    transition: 0.3s transform linear, 0.3s height linear 0.3s;
+  }
+
+  .button-one .box:hover:after {
+    border-color: #c57104;
+    height: 50%;
+    transform: translateX(0);
+    transition: 0.3s transform linear, 0.3s height linear 0.5s;
+  }
+
+  .button-one {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
   }
 
   /*start of first-page*/
   .first-main {
     position: relative;
     color: #ffffff;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-top: 3rem;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: 0rem;
   }
   .first-main .img-fluid {
     width: 100%;
-    height: 100%;
     margin-top: 0.5rem;
-    margin-left: 0.6rem;
+    margin-left: 0.7rem;
   }
   .first-main .card-title {
-    font-size: 150px;
-    margin-left: 5rem;
+    font-size: 155px;
+    margin-left: 10%;
+    font-weight: bolder;
+    text-shadow: 5px 10px #302f2f;
   }
-  .first-main .card-text {
-    margin-left: 5rem;
+
+  .first-main .button-two {
+    margin-left: 68%;
+    font-size: 25px;
   }
+
   .first-main .actual-text {
     font-size: 20px;
   }
@@ -424,7 +579,7 @@
   .button-two {
     --border-right: 2px;
     --text-stroke-color: rgb(0, 0, 0);
-    --animation-color: #14ebd9;
+    --animation-color: #f2f700;
     --fs-size: 1.5rem;
     letter-spacing: 1px;
     text-decoration: none;
@@ -444,7 +599,7 @@
     inset: 0;
     border-right: var(--border-right) solid var(--animation-color);
     overflow: hidden;
-    transition: 0.3s;
+    transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
   }
   /* hover */
@@ -459,6 +614,7 @@
     margin-left: 10%;
     margin-right: 10%;
     font-family: sans-serif;
+    text-align: justify;
   }
   .second-main .card-header {
     color: #ffffff;
@@ -478,48 +634,90 @@
     margin-left: 0%;
     margin-right: 0%;
   }
+  .second-main p {
+    font-size: 17px;
+  }
   /*Third page*/
-  .third-main .card-header {
-    color: #ffffff;
-  }
-  .third-main .card-title {
-    color: #ffffff;
-  }
-  .third-main .card-text {
-    color: #ffffff;
-  }
   .third-main {
-    margin-top: 10rem;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 12rem;
+    margin-right: 12rem;
+    margin-top: 0;
+    margin-top: 0;
   }
-  .third-main .container {
-    margin-left: 10%;
-  }
-  .third-main .display-3 {
+  .third-main .skills {
     color: #ffffff;
+    font-size: 60px;
+    padding: 1rem;
+    text-align: center;
   }
-  .third-main #thirdmain-framework {
-    margin-left: 50%;
-  }
-  .third-main #thirdmain-reactjs {
+
+  .third-main #html-image {
+    width: 80px;
+    font-size: 15px;
     margin-left: 20%;
   }
+  .third-main #css-image {
+    width: 80px;
+    font-size: 15px;
+  }
+  .third-main #js-image {
+    width: 80px;
+    font-size: 15px;
+    margin-left: 40%;
+  }
+  .third-main #jstext {
+    width: 70px;
+  }
+  .third-main #php-image {
+    width: 120px;
+    font-size: 15px;
+    margin-left: 45%;
+    margin-top: 0rem;
+  }
+  .third-main #bootstrap {
+    width: 100px;
+    font-size: 15px;
+    margin-left: 66%;
+  }
+  .third-main #reactjs {
+    width: 85px;
+    font-size: 15px;
+    margin-left: 17%;
+  }
+
   /*fourth page*/
 
-  .fourth-main {
+  .fourth-main #contact-me {
+    font-size: 70px;
     margin-top: 10rem;
   }
-  .fourth-main .card-header {
-    font-size: 65px;
-  }
-  .fourth-main .comment-section {
-    margin-top: 10%;
-    font-family: sans-serif;
-  }
-  .fourth-main .container {
+  .fourth-main #yahoo-image {
+    width: 80px;
+    margin-left: 100%;
     margin-top: 5rem;
-    margin-left: 15%;
+  }
+  .fourth-main #facebook-image {
+    width: 80px;
+    margin-left: 120%;
+    margin-top: 5rem;
+  }
+  .fourth-main #google-image {
+    width: 80px;
+    margin-left: 150%;
+    margin-top: 5rem;
+  }
+  .fourth-main #yahoo-btn {
+    width: 100px;
+    margin-left: 120%;
+  }
+  .fourth-main #facebook-btn {
+    width: 100px;
+    margin-left: 145%;
+  }
+
+  .fourth-main #google-btn {
+    width: 100px;
+    margin-left: 180%;
   }
 
   /*card-footer*/
@@ -530,6 +728,7 @@
     margin-top: 10px;
   }
 }
+
 @keyframes scaleUp {
   0% {
     transform: scale(1);
