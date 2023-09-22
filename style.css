@@ -438,14 +438,20 @@
 .card-footer {
   margin-top: 2rem;
 }
+.mark {
+  margin-top: 1rem;
+}
 
 @media (min-width: 992px) {
   .button-one .nav-link {
     font-size: 15px;
   }
   .navbar-container {
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 1%;
+  }
+  .mark {
+    margin-top: 0rem;
   }
 
   .button-one .box {
@@ -689,7 +695,7 @@
 
   .fourth-main #contact-me {
     font-size: 70px;
-    margin-top: 10rem;
+    margin-top: 15rem;
   }
   .fourth-main #yahoo-image {
     width: 80px;
@@ -698,12 +704,12 @@
   }
   .fourth-main #facebook-image {
     width: 80px;
-    margin-left: 120%;
+    margin-left: 110%;
     margin-top: 5rem;
   }
   .fourth-main #google-image {
     width: 80px;
-    margin-left: 150%;
+    margin-left: 100%;
     margin-top: 5rem;
   }
   .fourth-main #yahoo-btn {
@@ -712,12 +718,16 @@
   }
   .fourth-main #facebook-btn {
     width: 100px;
-    margin-left: 145%;
+    margin-left: 130%;
   }
 
   .fourth-main #google-btn {
     width: 100px;
-    margin-left: 180%;
+    margin-left: 120%;
+  }
+  .fourth-main #fourthmain-row {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
   }
 
   /*card-footer*/
@@ -725,7 +735,10 @@
   .card-footer p {
     color: #000000;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
+  }
+  .mark {
+    margin-top: 1rem;
   }
 }
 
