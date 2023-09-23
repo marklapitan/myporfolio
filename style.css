@@ -203,8 +203,6 @@
 .third-main {
   margin-top: 0;
   margin-top: 0;
-  margin-left: 10%;
-  margin-right: 10%;
 }
 .third-main .skills {
   color: #ffffff;
@@ -216,41 +214,64 @@
   margin-top: 0%;
 }
 .third-main #html-image {
-  width: 70px;
-  font-size: 10px;
+  width: 50px;
+  font-size: 8px;
   color: #ffffff;
   margin-left: 10%;
 }
 .third-main #css-image {
-  width: 70px;
-  font-size: 10px;
+  width: 50px;
+  font-size: 8px;
   color: #ffffff;
-  margin-left: 20%;
+  margin-left: 15%;
 }
 .third-main #js-image {
-  width: 80px;
-  font-size: 11px;
+  width: 50px;
+  font-size: 8px;
   color: #ffffff;
-  margin-left: 10%;
+  margin-left: 12%;
+}
+.third-main #html {
+  width: 50px;
+  font-size: 10px;
+}
+.third-main #jstext {
+  width: 52px;
+  font-size: 12px;
+}
+.third-main #css {
+  width: 50px;
+  font-size: 10px;
+}
+.third-main #php {
+  width: 50px;
 }
 .third-main #php-image {
-  width: 80px;
+  width: 50px;
   font-size: 12px;
   color: #ffffff;
-  margin-top: 21px;
-  margin-left: 20%;
+  margin-top: 15px;
+  margin-left: 11%;
 }
 .third-main #bootstrap {
-  width: 80px;
+  width: 50px;
   font-size: 10px;
-  margin-left: 28%;
+  margin-left: 50%;
   color: #ffffff;
 }
+.third-main #bootstraptext {
+  width: 52px;
+  font-size: 12px;
+}
 .third-main #reactjs {
-  width: 70px;
+  width: 40px;
   font-size: 12px;
   margin-left: 15%;
   color: #ffffff;
+}
+.third-main #reactjstext {
+  width: 50px;
+  font-size: 12px;
 }
 
 .third-main #thirdmain-framework {
@@ -261,7 +282,9 @@
 .fourth-main {
   margin-top: 5rem;
 }
-
+.fourth-main #fourthmain-row {
+  margin-top: 2rem;
+}
 .fourth-main #contact-me {
   font-size: 30px;
   color: #ffffff;
@@ -269,33 +292,30 @@
 }
 .fourth-main #yahoo-image {
   width: 50px;
-  margin-left: 80%;
-  margin-top: 1rem;
+  margin-left: 40%;
 }
 .fourth-main #facebook-image {
   width: 50px;
-  margin-left: 80%;
-  margin-top: 1rem;
+  margin-left: 28%;
 }
 .fourth-main #google-image {
   width: 50px;
-  margin-left: 80%;
-  margin-top: 1rem;
+  margin-left: 13%;
 }
 .fourth-main #yahoo-btn {
   width: 80px;
-  margin-left: 35%;
+  margin-left: 20%;
   font-size: 8px;
 }
 .fourth-main #facebook-btn {
   width: 80px;
-  margin-left: 35%;
+  margin-left: 12%;
   font-size: 8px;
 }
 
 .fourth-main #google-btn {
   width: 80px;
-  margin-left: 35%;
+  margin-left: 5%;
   font-size: 8px;
 }
 
@@ -441,6 +461,9 @@
 /* top-line*/
 .mark {
   margin-top: 2rem;
+}
+.comment-section .form-floating {
+  margin-left: 5%;
 }
 
 /*desktop*/
@@ -702,35 +725,35 @@
   }
   .fourth-main #yahoo-image {
     width: 80px;
-    margin-left: 100%;
+    margin-left: 50%;
     margin-top: 5rem;
   }
   .fourth-main #facebook-image {
     width: 80px;
-    margin-left: 110%;
+    margin-left: 50%;
     margin-top: 5rem;
   }
   .fourth-main #google-image {
     width: 80px;
-    margin-left: 100%;
+    margin-left: 52%;
     margin-top: 5rem;
   }
   .fourth-main #yahoo-btn {
     width: 100px;
-    margin-left: 120%;
+    margin-left: 45%;
   }
   .fourth-main #facebook-btn {
     width: 100px;
-    margin-left: 130%;
+    margin-left: 48%;
   }
 
   .fourth-main #google-btn {
     width: 100px;
-    margin-left: 120%;
+    margin-left: 50%;
   }
   .fourth-main #fourthmain-row {
     margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
   }
 
   /*card-footer*/
