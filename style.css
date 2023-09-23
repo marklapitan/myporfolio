@@ -107,10 +107,10 @@
   color: #000000;
 }
 .first-main .actual-text {
-  font-size: 14px;
+  font-size: 10px;
 }
 .first-main .hover-text {
-  font-size: 14px;
+  font-size: 10px;
 }
 .first-main .box {
   padding: 1rem;
@@ -547,15 +547,15 @@
   }
 
   .first-main .button-two {
-    margin-left: 68%;
-    font-size: 25px;
+    margin-left: 70%;
+    font-size: 15px;
   }
 
   .first-main .actual-text {
-    font-size: 20px;
+    font-size: 15px;
   }
   .first-main .hover-text {
-    font-size: 20px;
+    font-size: 15px;
   }
   .first-main .first-main p {
     color: #000000;
