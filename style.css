@@ -107,10 +107,10 @@
   color: #000000;
 }
 .first-main .actual-text {
-  font-size: 10px;
+  font-size: 12px;
 }
 .first-main .hover-text {
-  font-size: 10px;
+  font-size: 12px;
 }
 .first-main .box {
   padding: 1rem;
@@ -283,18 +283,18 @@
   margin-top: 1rem;
 }
 .fourth-main #yahoo-btn {
-  width: 70px;
+  width: 80px;
   margin-left: 35%;
   font-size: 8px;
 }
 .fourth-main #facebook-btn {
-  width: 70px;
+  width: 80px;
   margin-left: 35%;
   font-size: 8px;
 }
 
 .fourth-main #google-btn {
-  width: 70px;
+  width: 80px;
   margin-left: 35%;
   font-size: 8px;
 }
