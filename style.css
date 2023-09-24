@@ -81,25 +81,22 @@
 .first-main {
   position: relative;
   color: #ffffff;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 1rem;
 }
 .first-main .img-fluid {
-  width: 90%;
-  margin-left: 5%;
-  height: 100%;
+  width: fit-content;
+
+  height: fit-content;
   margin-top: 0.5rem;
 }
 .first-main .card-title {
-  font-size: 36px;
-  margin-left: 2rem;
   margin-top: 2rem;
   font-weight: bolder;
   text-shadow: 5px 10px #302f2f;
 }
 .first-main .button-two {
-  margin-left: 1.5rem;
   margin-top: 0.8rem;
 }
 
@@ -107,10 +104,10 @@
   color: #000000;
 }
 .first-main .actual-text {
-  font-size: 12px;
+  font-size: 12.5px;
 }
 .first-main .hover-text {
-  font-size: 12px;
+  font-size: 12.5px;
 }
 .first-main .box {
   padding: 1rem;
@@ -138,19 +135,19 @@
 
 /* button styling */
 .button-two {
-  --border-right: 1px;
+  --border-right: 0.5px;
   --text-stroke-color: rgb(0, 0, 0);
   --animation-color: #14ebd9;
   --fs-size: 0.5rem;
   letter-spacing: 1px;
   text-decoration: none;
   font-size: var(--fs-size);
-  margin-left: 5rem;
+  margin-left: 0.2rem;
   position: relative;
   color: transparent;
   -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-/* this is the text, when you hover on button */
+/*-------------------------------------- this is the text, when you hover on button------------------ */
 .hover-text {
   position: absolute;
   box-sizing: border-box;
@@ -169,119 +166,91 @@
   filter: drop-shadow(0 0 25px var(--animation-color));
 }
 
-/*second-page*/
+/*----------------------------------start second-page-----------------------------------*/
 .second-main {
   margin-top: 6rem;
-  margin-left: 10%;
-  margin-right: 10%;
   font-family: sans-serif;
   text-align: justify;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 .second-main .card-header {
   color: #ffffff;
 }
-.second-main .container {
-  font-size: 5px;
-}
+
 .second-main #secondmain-cardbody {
   margin-right: 20%;
 }
 .second-main p {
-  font-size: 12px;
+  font-size: 10px;
 }
 .second-main #secondmain-image-two {
-  width: 300px;
-  margin-left: 0%;
+  width: 80%;
+  margin-left: 10%;
 }
 .secondmain-about {
   color: #ffffff;
   margin-left: 0%;
   margin-right: 0%;
 }
+/*---------------------------------------end second page----------------------------------------*/
 
-/*Third page*/
-.third-main {
-  margin-top: 0;
-  margin-top: 0;
-}
-.third-main .skills {
-  color: #ffffff;
-  font-size: 35px;
-  padding: 1rem;
-  text-align: center;
-}
-.third-main .card-title {
-  margin-top: 0%;
-}
-.third-main #html-image {
-  width: 50px;
-  font-size: 8px;
-  color: #ffffff;
+/*----------------------------start  skills section----------------------------------------------*/
+
+/*-----------------------------(third main///full-stack container)-------start---------------------*/
+#second-row {
   margin-left: 10%;
+  margin-right: 10%;
 }
-.third-main #css-image {
-  width: 50px;
-  font-size: 8px;
-  color: #ffffff;
-  margin-left: 15%;
-}
-.third-main #js-image {
-  width: 50px;
-  font-size: 8px;
-  color: #ffffff;
-  margin-left: 12%;
-}
-.third-main #html {
-  width: 50px;
-  font-size: 10px;
-}
-.third-main #jstext {
-  width: 53px;
+#fullstack-title {
   font-size: 12px;
-  margin-top: 3px;
 }
-.third-main #css {
-  width: 50px;
-  font-size: 10px;
-}
-.third-main #php {
-  width: 50px;
-  margin-top: 3px;
-}
-.third-main #php-image {
-  width: 50px;
-  font-size: 12px;
-  color: #ffffff;
-  margin-top: 15px;
-  margin-left: 11%;
-}
-.third-main #bootstrap {
-  width: 52px;
-  font-size: 10px;
-  margin-left: 50%;
+#html-image {
+  width: fit-content;
   color: #ffffff;
 }
-.third-main #bootstraptext {
-  width: 100px;
-  font-size: 12px;
-  margin-right: 70px;
-}
-.third-main #reactjs {
-  width: 40px;
-  font-size: 12px;
-  margin-left: 15%;
+#css-image {
+  width: fit-content;
   color: #ffffff;
 }
-.third-main #reactjstext {
-  width: 50px;
-  font-size: 12px;
+#js-image {
+  width: fit-content;
+  color: #ffffff;
+}
+#php-image {
+  width: fit-content;
+  color: #ffffff;
+}
+#php {
+  margin-top: 1.5rem;
+}
+#jstext {
 }
 
-.third-main #thirdmain-framework {
-  margin-left: 5rem;
+/*------------------------------(second main///full-stack container)---------end-------------------*/
+
+/*------------------------------------second main///framework------ start----------------------*/
+
+#framework {
+  font-size: 12px;
+  margin-top: 1rem;
 }
 
-/*fourth page*/
+#bootstrap {
+  width: fit-content;
+  font-size: 12px;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+#reactjs {
+  width: fit-content;
+  font-size: 12px;
+  color: #ffffff;
+}
+/*------------------------------------------end Third page--------------------------------------*/
+
+/*------------------------------------fourth page----------------------------------*/
 .fourth-main {
   margin-top: 5rem;
 }
@@ -315,7 +284,6 @@
   margin-left: 12%;
   font-size: 8px;
 }
-
 .fourth-main #google-btn {
   width: 80px;
   margin-left: 5%;
@@ -470,7 +438,7 @@
 }
 
 /*desktop*/
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .button-one .nav-link {
     font-size: 15px;
   }
@@ -484,7 +452,7 @@
   }
 
   .button-one .box {
-    width: 110px;
+    width: 100px;
     height: auto;
     float: left;
     transition: 0.5s linear;
@@ -532,6 +500,7 @@
   .button-one .box:hover:before {
     border-color: #f7db81;
     height: 50%;
+
     transform: translateX(0);
     transition: 0.3s transform linear, 0.3s height linear 0.3s;
   }
@@ -539,6 +508,7 @@
   .button-one .box:hover:after {
     border-color: #c57104;
     height: 50%;
+
     transform: translateX(0);
     transition: 0.3s transform linear, 0.3s height linear 0.5s;
   }
@@ -561,12 +531,13 @@
     margin-top: 0rem;
   }
   .first-main .img-fluid {
-    width: 100%;
+    width: 85%;
+    height: fit-content;
     margin-top: 0.5rem;
     margin-left: 0.7rem;
   }
   .first-main .card-title {
-    font-size: 155px;
+    font-size: 100px;
     margin-left: 10%;
     font-weight: bolder;
     text-shadow: 5px 10px #302f2f;
@@ -574,6 +545,7 @@
 
   .first-main .button-two {
     margin-left: 70%;
+    height: auto;
     font-size: 15px;
   }
 
