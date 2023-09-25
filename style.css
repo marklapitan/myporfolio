@@ -195,34 +195,69 @@
 }
 /*---------------------------------------end second page----------------------------------------*/
 
-/*----------------------------start  skills section----------------------------------------------*/
-
 /*-----------------------------(third main///full-stack container)-------start---------------------*/
-#second-row {
-  margin-left: 10%;
-  margin-right: 10%;
+#second-row #html-image {
+  width: 100%;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ff4500;
+}
+#second-row .html-text {
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#second-row #css-image {
+  width: 100%;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3333fb;
+}
+#second-row .css-text {
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#second-row #js-image {
+  width: 100%;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffff00;
+}
+#second-row .js-text {
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#second-row #php-image {
+  width: 100%;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+#second-row .php-text {
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #fullstack-title {
   font-size: 12px;
-}
-#html-image {
-  width: fit-content;
-  color: #ffffff;
-}
-#css-image {
-  width: fit-content;
-  color: #ffffff;
-}
-#js-image {
-  width: fit-content;
-  color: #ffffff;
-}
-#php-image {
-  width: fit-content;
-  color: #ffffff;
-}
-#php {
-  margin-top: 1.5rem;
 }
 
 /*------------------------------(second main///full-stack container)---------end-------------------*/
@@ -233,19 +268,37 @@
   font-size: 12px;
   margin-top: 1rem;
 }
-
-#bootstrap {
-  width: fit-content;
-  font-size: 12px;
-  margin-bottom: 1rem;
-  color: #ffffff;
+#second-row1 #bootstrap-image {
+  width: 100%;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a2be2;
+}
+#second-row1 .bootstrap-text {
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#second-row1 #reactjs-image {
+  width: 100%;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0000ff;
+}
+#second-row1 .reactjs-text {
+  width: 100%;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#reactjs {
-  width: fit-content;
-  font-size: 12px;
-  color: #ffffff;
-}
 /*------------------------------------------end Third page--------------------------------------*/
 
 /*------------------------------------fourth page----------------------------------*/
