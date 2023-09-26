@@ -196,9 +196,14 @@
 /*---------------------------------------end second page----------------------------------------*/
 
 /*-----------------------------(third main///full-stack container)-------start---------------------*/
+
+#fullstack-title {
+  font-size: 12px;
+}
+
 #second-row #html-image {
   width: 100%;
-  font-size: 35px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,7 +218,7 @@
 }
 #second-row #css-image {
   width: 100%;
-  font-size: 35px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -226,41 +231,49 @@
   align-items: center;
   justify-content: center;
 }
-#second-row #js-image {
+
+#second-row0 #js-image {
   width: 100%;
-  font-size: 35px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffff00;
 }
-#second-row .js-text {
+#second-row0 .js-text {
   width: 100%;
   font-size: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#second-row #php-image {
+#second-row0 #php-image {
   width: 100%;
-  font-size: 35px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
 }
-#second-row .php-text {
+#second-row0 .php-text {
   width: 100%;
   font-size: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#fullstack-title {
-  font-size: 12px;
-}
 
 /*------------------------------(second main///full-stack container)---------end-------------------*/
+
+#second-row .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
 
 /*------------------------------------second main///framework------ start----------------------*/
 
@@ -270,7 +283,7 @@
 }
 #second-row1 #bootstrap-image {
   width: 100%;
-  font-size: 35px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -285,7 +298,7 @@
 }
 #second-row1 #reactjs-image {
   width: 100%;
-  font-size: 35px;
+  font-size: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
