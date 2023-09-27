@@ -1,10 +1,20 @@
 /*----------------------------------navbar-btn-------------------------------------------------*/
-.button-one .nav-link {
-  font-size: 10px;
-  font-weight: lighter;
+.navbar-container .navbar-nav {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--bs-navbar-color);
+  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+  list-style: none;
 }
-.navbar-container {
-  margin-top: 2rem;
+
+.button-one .nav-link {
+  font-size: 8px;
+  font-weight: lighter;
 }
 
 .button-one .box {
@@ -79,8 +89,8 @@
 /*--------------------------------------------start of first-page------------------------------------*/
 .first-main .box {
   color: #ffffff;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 8%;
+  margin-right: 8%;
   height: auto;
 }
 .first-main #head-image {
