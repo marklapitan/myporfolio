@@ -1,4 +1,4 @@
-/*navbar-btn*/
+/*----------------------------------navbar-btn-------------------------------------------------*/
 .button-one .nav-link {
   font-size: 10px;
   font-weight: lighter;
@@ -76,25 +76,26 @@
   background: transparent;
 }
 
-/*start of first-page*/
+/*--------------------------------------------start of first-page------------------------------------*/
 
-.first-main {
-  position: relative;
+.first-main .box {
   color: #ffffff;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 1rem;
+  position: absolute;
+  height: auto;
 }
-.first-main .img-fluid {
-  width: fit-content;
-
-  height: fit-content;
-  margin-top: 0.5rem;
+.first-main #head-image {
+  width: 40%;
+  margin: 0;
+  position: absolute;
 }
-.first-main .card-title {
-  margin-top: 2rem;
+.card-title {
   font-weight: bolder;
-  text-shadow: 5px 10px #302f2f;
+  text-shadow: 5px 5px #302f2f;
+  color: #ffffff;
+  position: absolute;
 }
 .first-main .button-two {
   margin-top: 0.8rem;
@@ -104,11 +105,13 @@
   color: #000000;
 }
 .first-main .actual-text {
-  font-size: 12.5px;
+  font-size: 15px;
 }
 .first-main .hover-text {
-  font-size: 12.5px;
+  font-size: 15px;
 }
+
+/*------------------------------------------first page hover section---------------------------------*/
 .first-main .box {
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.074);
@@ -200,6 +203,13 @@
 #fullstack-title {
   font-size: 12px;
 }
+#second-row .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+}
 
 #second-row #html-image {
   width: 100%;
@@ -265,16 +275,6 @@
 
 /*------------------------------(second main///full-stack container)---------end-------------------*/
 
-#second-row .row {
-  --bs-gutter-x: 0;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-0.5 * var(--bs-gutter-x));
-  margin-left: calc(-0.5 * var(--bs-gutter-x));
-}
-
 /*------------------------------------second main///framework------ start----------------------*/
 
 #framework {
@@ -314,7 +314,7 @@
 
 /*------------------------------------------end Third page--------------------------------------*/
 
-/*------------------------------------fourth page----------------------------------*/
+/*------------------------------------third page----------------------------------*/
 .third-main {
   margin-top: 6rem;
   margin-left: 2rem;
@@ -352,6 +352,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #8a2be2;
 }
 .third-main #facebook-image {
   width: 100%;
@@ -359,6 +360,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #0000ff;
 }
 .third-main #google-image {
   width: 100%;
@@ -366,6 +368,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ff0000;
 }
 .third-main #github-image {
   width: 100%;
@@ -373,6 +376,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff;
 }
 .third-main #yahoo-btn {
   width: 80px;
@@ -402,8 +406,19 @@
   align-items: center;
   justify-content: center;
 }
+.third-main > #faceboo-image {
+  align-items: center;
+}
+.third-main .row {
+  --bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-bottom: 1rem;
+}
 
-/*--------------------------fourth page (yahoo-btn,facbook-btn,Gmail-btn,github)-------------------------------------------*/
+/*--------------------------fourth page hover section (yahoo-btn,facbook-btn,Gmail-btn,github)-------------------------------------------*/
 
 .third-main #yahoo-btn {
   position: relative;
@@ -422,7 +437,6 @@
   content: " ";
   width: 0%;
   height: 100%;
-
   background: #0362e7;
   position: absolute;
   transition: all 0.5s ease-in-out;
@@ -434,7 +448,6 @@
   left: 0;
   width: 100%;
 }
-
 .third-main #yahoo-btn span {
   text-align: center;
   text-decoration: none;
@@ -580,6 +593,48 @@
   color: #ffffff;
   animation: scaleUp 0.3s ease-in-out;
 }
+/*-----------------------------------send me button------------------------------------------*/
+.beautiful-button {
+  position: relative;
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
+
+  /* Gradient background */
+  color: white;
+  /* White text color */
+  font-family: "Segoe UI", sans-serif;
+  /* Stylish and legible font */
+  font-weight: bold;
+  font-size: 8px;
+  /* Large font size */
+  border: none;
+  /* No border */
+  border-radius: 30px;
+  /* Rounded corners */
+  padding: 5px 10px;
+  /* Large padding */
+  cursor: pointer;
+  /* Cursor on hover */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  animation: button-shimmer 2s infinite;
+  transition: all 0.3s ease-in-out;
+  /* Smooth transition */
+}
+
+/* Hover animation */
+.beautiful-button:hover {
+  background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+  animation: button-particles 1s ease-in-out infinite;
+  transform: translateY(-2px);
+}
+
+/* Click animation */
+.beautiful-button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
 
 /*----------------------------------------------end-------------------------------------------*/
 .card-footer {
@@ -590,8 +645,15 @@
   margin-top: 2rem;
 }
 /*------------------------------------------Comment Section------------------------------------*/
-.comment-section .form-floating {
-  margin-left: 5%;
+.comment-section {
+  margin-top: 1rem;
+  margin: 2rem;
+  font-size: 10px;
+}
+.comment-section .col {
+  width: 100%;
+  display: flex;
+  justify-content: end;
 }
 
 /*-----------------------------------------Media Query (desktop)------------------------------------*/
@@ -908,5 +970,27 @@
 
   100% {
     transform: scale(1);
+  }
+}
+
+/* Shimmer animation */
+@keyframes button-shimmer {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
+  }
+}
+
+/* Particle animation */
+@keyframes button-particles {
+  0% {
+    background-position: left top;
+  }
+
+  100% {
+    background-position: right bottom;
   }
 }
