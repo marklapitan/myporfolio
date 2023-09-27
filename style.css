@@ -77,25 +77,31 @@
 }
 
 /*--------------------------------------------start of first-page------------------------------------*/
-
 .first-main .box {
   color: #ffffff;
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 1rem;
-  position: absolute;
   height: auto;
 }
 .first-main #head-image {
-  width: 40%;
   margin: 0;
-  position: absolute;
+  width: 80%;
 }
-.card-title {
+.first-main #firstmain-imagecol {
+  display: flex;
+  justify-content: center;
+}
+.first-main .card-title {
   font-weight: bolder;
   text-shadow: 5px 5px #302f2f;
+
   color: #ffffff;
-  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.first-main #nametag-col {
+  display: flex;
+  justify-content: center;
 }
 .first-main .button-two {
   margin-top: 0.8rem;
@@ -104,11 +110,20 @@
 .first-main p {
   color: #000000;
 }
+
+.first-main .row {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
 .first-main .actual-text {
-  font-size: 15px;
+  font-size: 10px;
 }
 .first-main .hover-text {
-  font-size: 15px;
+  font-size: 10px;
 }
 
 /*------------------------------------------first page hover section---------------------------------*/
@@ -129,7 +144,6 @@
 
 /* === removing default button style ===*/
 .button-two {
-  margin: 0;
   height: auto;
   background: transparent;
   padding: 0;
@@ -188,9 +202,9 @@
   font-size: 10px;
 }
 .second-main #secondmain-image-two {
-  width: 80%;
-  margin-left: 10%;
+  width: 100%;
 }
+
 .secondmain-about {
   color: #ffffff;
   margin-left: 0%;
@@ -319,6 +333,13 @@
   margin-top: 6rem;
   margin-left: 2rem;
   margin-right: 2rem;
+}
+.third-main .card-titile {
+  color: #ffffff;
+  margin-top: 2.5rem;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
 }
 .third-main #thirdmain-contact {
   display: flex;
